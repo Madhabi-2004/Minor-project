@@ -1,0 +1,14 @@
+section{
+    background-color: rgb(6, 6, 83);
+    color: red;
+    font-weight:bold;
+}
+.bg-white1{
+    background-color: rgb(6, 6, 83);
+}
+.p-4{
+    color: rgb(1, 9, 116);
+}
+span{
+    color: red;
+}
