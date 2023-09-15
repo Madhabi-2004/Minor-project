@@ -66,7 +66,7 @@ export default function Header() {
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg" alt="" width={200}/></a>
+          <a class="navbar-brand" href="#"><img src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg" alt="" width={50} /></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -84,21 +84,24 @@ export default function Header() {
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#">Contact</a>
               </li>
-              <li class="nav-item">
+              {/* <li class="nav-item">
                 <a class="nav-link" href="#">Link</a>
-              </li>
+              </li> */}
               {/* <li class="nav-item">
                 <a class="nav-link disabled"
                 >Disabled</a
                 >
               </li> */}
-               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"><button type="button" class="btn btn-light">Light</button></a>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><button type="button" class="btn btn-primary">Login</button></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><button type="button" class="btn btn-primary">Signup</button></a>
               </li>
             </ul>
             <form class="d-flex input-group w-auto">
@@ -108,13 +111,14 @@ export default function Header() {
                 placeholder="Type query"
                 aria-label="Search"
               />
-              <button
+              {/* <button
                 class="btn btn-outline-primary"
                 type="button"
                 data-mdb-ripple-color="dark"
               >
                 Search
-              </button>
+              </button> */}
+              <button type="button" class="btn btn-primary">Search</button>
             </form>
           </div>
         </div>

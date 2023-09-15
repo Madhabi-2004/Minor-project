@@ -1,3 +1,9 @@
 .bg-light1{
     background-color: red;
 }
+.nav-item{
+    align-items: center;
+}
+.btn btn-outline-primary{
+    margin-left: 20px;
+}
