@@ -1,8 +1,20 @@
 import React from 'react';
-// import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faTwitter, faInstagram, faLinkedin, faPinterest, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faPhone, faEnvelope, faBuilding } from '@fortawesome/free-solid-svg-icons'
+
+
+
+
 import "./Footer.css";
 
 export default function App() {
+  const services = [
+    { title: 'HOTEL', link: '#' },
+    { title: 'FLIGHT', link: '#' },
+    { title: 'TRAIN', link: '#' },
+    { title: 'BUS', link: '#' },
+  ];
   return (
     <div className='footer-body'>
       {/* <!-- Footer --> */}
@@ -18,22 +30,22 @@ export default function App() {
           {/* <!-- Right --> */}
           <div>
             <a href="" className="me-4 link-secondary">
-              <i className="fab fa-facebook-f"></i>
+              <FontAwesomeIcon icon={faFacebook} beatFade style={{ color: "#e6180a", }} />
             </a>
             <a href="" className="me-4 link-secondary">
-              <i className="fab fa-twitter"></i>
+              <FontAwesomeIcon icon={faTwitter} bounce style={{ color: "#6ba1ff", }} />
             </a>
             <a href="" className="me-4 link-secondary">
-              <i className="fab fa-google"></i>
+              <FontAwesomeIcon icon={faInstagram} beatFade style={{ color: "#d433d7", }} />
             </a>
             <a href="" className="me-4 link-secondary">
-              <i className="fab fa-instagram"></i>
+              <FontAwesomeIcon icon={faLinkedin} bounce style={{ color: "#a10c0c", }} />
             </a>
             <a href="" className="me-4 link-secondary">
-              <i className="fab fa-linkedin"></i>
+              <FontAwesomeIcon icon={faPinterest} beatFade style={{ color: "#e60505", }} />
             </a>
             <a href="" className="me-4 link-secondary">
-              <i className="fab fa-github"></i>
+              <FontAwesomeIcon icon={faYoutube} beatFade style={{ color: "#eb0000", }} />
             </a>
           </div>
           {/* <!-- Right --> */}
@@ -59,29 +71,24 @@ export default function App() {
               {/* <!-- Grid column --> */}
 
               {/* <!-- Grid column --> */}
+              {/* <!-- Links --> */}
               <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                {/* <!-- Links --> */}
                 <h6 className="text-uppercase fw-bold mb-4">
-                  Products
+                  <u>Services</u>
                 </h6>
-                <p>
-                  <a href="#!" className="text-reset">Angular</a>
-                </p>
-                <p>
-                  <a href="#!" className="text-reset">React</a>
-                </p>
-                <p>
-                  <a href="#!" className="text-reset">Vue</a>
-                </p>
-                <p>
-                  <a href="#!" className="text-reset">Laravel</a>
-                </p>
+                {services.map((service, index) => (
+                  <p key={index}>
+                    <a href={service.link} className="text-reset">
+                      {service.title}
+                    </a>
+                  </p>
+                ))}
               </div>
               {/* <!-- Grid column --> */}
               {/* <!-- Grid column --> */}
-              <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                {/* <!-- Links --> */}
-                <h6 className="text-uppercase fw-bold mb-4">
+              {/* <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4"> */}
+              {/* <!-- Links --> */}
+              {/* <h6 className="text-uppercase fw-bold mb-4">
                   Useful links
                 </h6>
                 <p>
@@ -96,20 +103,17 @@ export default function App() {
                 <p>
                   <a href="#!" className="text-reset">Help</a>
                 </p>
-              </div>
+              </div> */}
               {/* <!-- Grid column --> */}
 
               {/* <!-- Grid column --> */}
               <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                 {/* <!-- Links --> */}
-                <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
-                <p><i className="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
-                <p>
-                  <i className="fas fa-envelope me-3 text-secondary"></i>
-                  info@example.com
-                </p>
-                <p><i className="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
-                <p><i className="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+                <h6 className="text-uppercase fw-bold mb-4"><u>Contact</u></h6>
+                <p><i className="fas fa-home me-3 text-secondary"></i><FontAwesomeIcon icon={faBuilding} beat style={{ color: "#ff0000", }} /> New York, NY 10012, US</p>
+                <p><i className="fas fa-envelope me-3 text-secondary"></i><FontAwesomeIcon icon={faEnvelope} beat style={{ color: "#ff0000", }} />info@example.com</p>
+                <p><i className="fas fa-phone me-3 text-secondary"></i><FontAwesomeIcon icon={faPhone} beat style={{ color: "#e00000", }} /> + 01 234 567 88</p>
+                <p><i className="fas fa-print me-3 text-secondary"></i><FontAwesomeIcon icon={faPhone} beat style={{ color: "#e00000", }} /> + 01 234 567 89</p>
               </div>
               {/* <!-- Grid column --> */}
             </div>
