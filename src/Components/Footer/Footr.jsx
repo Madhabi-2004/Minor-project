@@ -2,10 +2,6 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faTwitter, faInstagram, faLinkedin, faPinterest, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faPhone, faEnvelope, faBuilding } from '@fortawesome/free-solid-svg-icons'
-
-
-
-
 import "./Footer.css";
 
 export default function App() {
@@ -123,7 +119,7 @@ export default function App() {
         {/* <!-- Section: Links  --> */}
 
         {/* <!-- Copyright --> */}
-        <div className="text-center p-4 fw-bold" style={{ backgroundColor: 'red' }}>
+        <div className="text-center p-4 fw-bold" style={{ backgroundColor: '#D3D3D3' }}>
           © 2021 Copyright:
           <a className="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
         </div>

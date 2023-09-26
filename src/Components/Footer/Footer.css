@@ -1,17 +1,17 @@
 section{
-    background-color: rgb(6, 6, 83);
-    color: red;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-weight:bold;
 }
 .bg-white1{
-    background-color: rgb(6, 6, 83);
+    background-color: rgb(255, 255, 255);
 }
 .p-4{
-    color: rgb(1, 9, 116);
+    color: rgb(255, 255, 255);
 }
 span{
-    color: red;
+    color: rgb(255, 0, 0);
 }
 .mb-4{
-    text-align: center;
+    text-align: left;
 }
