@@ -64,19 +64,19 @@ export default function Header() {
               </a>
             </li>
           </ul>
-          <form className="d-flex input-group w-auto">
-            <input
+          {/* <form className="d-flex input-group w-auto"> */}
+            {/* <input
               type="search"
               className="form-control"
               placeholder="Type query"
               aria-label="Search"
               value={searchQuery}
               onChange={handleSearchInputChange}
-            />
-            <button type="button" className="btn btn-primary">
+            /> */}
+            {/* <button type="button" className="btn btn-primary">
               Search
-            </button>
-          </form>
+            </button> */}
+          {/* </form> */}
         </div>
       </div>
     </nav>

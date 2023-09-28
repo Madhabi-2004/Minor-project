@@ -1,0 +1,42 @@
+/* App.css or your custom CSS file */
+.slider-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    flex: 0 0 100%;
+    width: 100dvw;
+    height: 100vh;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    /* Each slide occupies 100% of the container width */
+}
+.slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Background color for text overlay */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+p {
+    margin: 0;
+    font-size: 16px;
+}

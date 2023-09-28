@@ -1,42 +1,35 @@
-import React from "react";
-// import bannerImage from "../../assets/banner.png"
-import backgroundImage from "../../asset/background.jpg"
+import React, { useState, useEffect } from 'react';
+// import Img from '../../asset/background.jpg'
+import './Banner.css'
 
-export default function BannerComponent() {
+
+const BannerComponent = ({ slides }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+    }, 3000); // Change the interval as needed
+
+    return () => clearInterval(interval);
+  }, [slides]);
+
   return (
-    <div
-      id="intro-example"
-      class="p-5 text-center bg-image banner_section"
-      style={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      <div class="mask">
-        <div class="d-flex justify-content-center align-items-center">
-          <div class="text-white">
-            <h1 class="mb-3">Learn Bootstrap 5 with MDB</h1>
-            <h5 class="mb-4">Best & free guide of responsive web design</h5>
-            <a
-              class="btn btn-outline-light btn-lg m-2"
-              href="https://www.youtube.com/watch?v=c9B4TPnak1A"
-              role="button"
-              rel="nofollow"
-              target="_blank"
-            >
-              Start tutorial
-            </a>
-            <a
-              class="btn btn-outline-light btn-lg m-2"
-              href="https://mdbootstrap.com/docs/standard/"
-              target="_blank"
-              role="button"
-            >
-              Download MDB UI KIT
-            </a>
+    <div className="slider-container">
+      <div className="slider" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+        {slides.map((slide, index) => (
+          <div className="slide" key={index} style={{ backgroundImage: `url(${slide.image})`  }}>
+            <div className="slide-content">
+              <h2>{slide.title}</h2>
+              <p>{slide.description}</p>
+            </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );
-}
+};
+
+export default BannerComponent;
+
+

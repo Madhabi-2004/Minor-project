@@ -16,7 +16,7 @@ export default function App() {
       {/* <!-- Footer --> */}
       <footer className="text-center text-lg-start bg-white1 text-muted">
         {/* <!-- Section: Social media --> */}
-        <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom bg-col">
           {/* <!-- Left --> */}
           <div className="me-5 d-none d-lg-block">
             <span>Get connected with us on social networks:</span>
@@ -26,22 +26,22 @@ export default function App() {
           {/* <!-- Right --> */}
           <div>
             <a href="" className="me-4 link-secondary">
-              <FontAwesomeIcon icon={faFacebook} beatFade style={{ color: "#e6180a", }} />
+              <FontAwesomeIcon icon={faFacebook}  style={{ color: "#e6180a", }} />
             </a>
             <a href="" className="me-4 link-secondary">
-              <FontAwesomeIcon icon={faTwitter} bounce style={{ color: "#6ba1ff", }} />
+              <FontAwesomeIcon icon={faTwitter}  style={{ color: "#6ba1ff", }} />
             </a>
             <a href="" className="me-4 link-secondary">
-              <FontAwesomeIcon icon={faInstagram} beatFade style={{ color: "#d433d7", }} />
+              <FontAwesomeIcon icon={faInstagram}  style={{ color: "#d433d7", }} />
             </a>
             <a href="" className="me-4 link-secondary">
-              <FontAwesomeIcon icon={faLinkedin} bounce style={{ color: "#a10c0c", }} />
+              <FontAwesomeIcon icon={faLinkedin}  style={{ color: "#a10c0c", }} />
             </a>
             <a href="" className="me-4 link-secondary">
-              <FontAwesomeIcon icon={faPinterest} beatFade style={{ color: "#e60505", }} />
+              <FontAwesomeIcon icon={faPinterest}  style={{ color: "#e60505", }} />
             </a>
             <a href="" className="me-4 link-secondary">
-              <FontAwesomeIcon icon={faYoutube} beatFade style={{ color: "#eb0000", }} />
+              <FontAwesomeIcon icon={faYoutube}  style={{ color: "#eb0000", }} />
             </a>
           </div>
           {/* <!-- Right --> */}
@@ -106,10 +106,10 @@ export default function App() {
               <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                 {/* <!-- Links --> */}
                 <h6 className="text-uppercase fw-bold mb-4"><u>Contact</u></h6>
-                <p><i className="fas fa-home me-3 text-secondary"></i><FontAwesomeIcon icon={faBuilding} beat style={{ color: "#ff0000", }} /> New York, NY 10012, US</p>
-                <p><i className="fas fa-envelope me-3 text-secondary"></i><FontAwesomeIcon icon={faEnvelope} beat style={{ color: "#ff0000", }} />info@example.com</p>
-                <p><i className="fas fa-phone me-3 text-secondary"></i><FontAwesomeIcon icon={faPhone} beat style={{ color: "#e00000", }} /> + 01 234 567 88</p>
-                <p><i className="fas fa-print me-3 text-secondary"></i><FontAwesomeIcon icon={faPhone} beat style={{ color: "#e00000", }} /> + 01 234 567 89</p>
+                <p><i className="fas fa-home me-3 text-secondary"></i><FontAwesomeIcon icon={faBuilding}  style={{ color: "#ff0000", }} /> New York, NY 10012, US</p>
+                <p><i className="fas fa-envelope me-3 text-secondary"></i><FontAwesomeIcon icon={faEnvelope}  style={{ color: "#ff0000", }} />info@example.com</p>
+                <p><i className="fas fa-phone me-3 text-secondary"></i><FontAwesomeIcon icon={faPhone}  style={{ color: "#e00000", }} /> + 01 234 567 88</p>
+                <p><i className="fas fa-print me-3 text-secondary"></i><FontAwesomeIcon icon={faPhone}  style={{ color: "#e00000", }} /> + 01 234 567 89</p>
               </div>
               {/* <!-- Grid column --> */}
             </div>
