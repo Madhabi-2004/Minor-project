@@ -10,11 +10,11 @@ section{
     color: rgb(2, 2, 2);
 }
 span{
-    color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
 }
 .mb-4{
     text-align: left;
 }
 .bg-col{
-    background-color: rgb(255, 212, 21);
+    background-color: rgb(231, 138, 76);
 }

@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
 import Header from "./Components/Header/Header";
 // import Footer from "./Components/Footer/foot"
@@ -14,7 +14,7 @@ function App() {
         <Header />
         <Routes>
           <Route  path="/"  element={<Home />} />
-          <Route  path="/about"  element={<About />} />
+          <Route  path="/about"  element={<About/>} />
         </Routes>
         <Footer/>
       </Router>

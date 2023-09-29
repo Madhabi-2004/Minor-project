@@ -3,11 +3,13 @@ import React from "react";
 import CommonSelect from "../CommonSelect/CommonSelect";
 import  { useState } from 'react';
 import "./Header.css"
+import { Link } from 'react-router-dom';
+
 
 export default function Header() {
   const [navLinks] = useState([
-    { text: 'Home', link: '#' },
-    { text: 'About', link: '#' },
+    { text: 'Home', link: '/' },
+    { text: 'About', link: '/about' },
     { text: 'Contact', link: '#' },
   ]);
 
