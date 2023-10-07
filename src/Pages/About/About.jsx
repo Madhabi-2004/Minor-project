@@ -19,15 +19,10 @@ function AboutUs() {
                             <div className="break-small mb-2"></div>
                             <p className="text-para">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-                                <br />
-                                ex soluta architecto nihil eos dolorum! Minima perferendis dolore
-                                <br />
+                                ex soluta architecto nihil eos dolorum! Minima perferendis dolo
                                 mque pariatur deleniti architecto quas officia, dignissimos, facere
-                                <br />
-                                nam, doloribus quod aliquam! Omnis sunt fuga perferendis, ut qu
-                                <br />
+                                nam, doloribus quod aliquam! Omnis sunt fuga perferendis, ut
                                 od recusandae totam voluptatum vitae et accusantium modi natus
-                                <br />
                                 explicabo, quaerat sequi. Molestias aut perspiciatis nam!
                             </p>
                             <div className="row">

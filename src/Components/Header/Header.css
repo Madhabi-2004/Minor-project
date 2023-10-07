@@ -1,9 +1,28 @@
-.bg-light1{
+/* .bg-light1{
     background-color: red;
-}
+} */
 .nav-item{
     align-items: center;
 }
 /* .btn btn-outline-primary{
     margin-left: 20px;
 } */
+li:nth-child(5) {
+    /* background-color: aqua; */
+    position: absolute;
+    left: 90%;
+}
+li:nth-child(4) {
+    /* background-color: aqua; */
+    position: absolute;
+    left: 82%;
+}
+li{
+    text-decoration: solid;
+    font-size: large;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-weight: bold;
+    font-style: normal;
+    justify-content: space-evenly;
+    width: 150px;
+}

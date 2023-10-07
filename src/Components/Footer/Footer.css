@@ -4,7 +4,7 @@ section{
     font-weight:bold;
 }
 .bg-white1{
-    background-color: rgb(243, 196, 165);
+    background-color: #659DBD;
 }
 .p-4{
     color: rgb(2, 2, 2);
@@ -16,5 +16,5 @@ span{
     text-align: left;
 }
 .bg-col{
-    background-color: rgb(231, 138, 76);
+    background-color: #0083cf;
 }

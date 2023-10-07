@@ -10,7 +10,7 @@ export default function Header() {
   const [navLinks] = useState([
     { text: 'Home', link: '/' },
     { text: 'About', link: '/about' },
-    { text: 'Contact', link: '#' },
+    { text: 'Contact', link: '/contact' },
   ]);
 
   const [searchQuery, setSearchQuery] = useState('');
@@ -52,11 +52,11 @@ export default function Header() {
               </li>
             ))}
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
+              <Link to="/login" className="nav-link active" aria-current="page" href="#">
                 <button type="button" className="btn btn-primary">
-                  Login
+                LOGIN
                 </button>
-              </a>
+                </Link> 
             </li>
             <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="#">
