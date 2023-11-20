@@ -1,82 +1,42 @@
-:root{
-    --colorOne:rgb(207, 154, 75);
-    --colorTwo:rgb(225, 213, 79);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-.img-head{
-    position: relative;
-    overflow: hidden;
-
-}
-.img-head img{
-    width: 100%;
-    transition: transform .3s;
-}
-.img-head:hover img{
-
-transform: scale(1.2);
-}
-.img-head::after{
-    content: "";
-    width:100%;
-    height: 100%;
-    background-image: linear-gradient(to right bottom, var(--colorOne), var(--colorTwo));
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: .5;
-
-}
-.text-head{
-    font-size: 28px;
-    color: var(--colorTwo);
-}
-.break-small{
-    width: 80px;
-    height: 3px;
-    background-color: var(--colorOne);
-}
-.text-para{
-    font-size: 16px;
-    color:rgb(41, 39, 39);
-    text-align:justify;
-}
-.box{
-    background-color: var(--colorTwo);
-    color:black;
+h2{
     text-align: center;
-    padding: 30px 0px;
-    position: relative;
-    overflow: hidden;
+    font-size: 3em;
+    color: rgb(4, 4, 93);
 }
-.box i{
-  font-size: 42px;
+
+.innerPart{
+    display: flex;
+    padding: 12px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22px;
 }
-.box h4{
-    font-size: 30px;
-    font-weight: 500;
-  }
-.box p{
-    font-size: 22px;
-  }
-.box::after,
-.box::before{
-   content: "";
-   position: absolute;
-   width: 100px;
-   height:100px;
-   background-color: #fff5;
-   border-radius: 50%;
-   transition: transform .3s;
+.innerPart span img{
+    border-radius: 22px;
+    height: 250px;
+    width: 350px;
 }
-.box::after{
-    left:-50px;
-    top:-50px;
+.innerPart .para{
+    padding: 20px;
 }
-.box::before{
-    right:-50px;
-    bottom:-50px;
+.para h5{
+    font-size: 20px;
+    color: rgb(8, 8, 169);
 }
-.box:hover::after,
-.box:hover:before{
-   transform: scale(1.2);
+.para p{
+    margin: 4px 40px;
+}
+
+.innerPart:nth-child(even){
+    background-color: rgba(202, 201, 201, 0.278);
+    flex-direction: row-reverse;
+}
+.innerPart:nth-child(odd){
+    background-color: rgba(161, 187, 189, 0.468);
 }

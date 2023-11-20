@@ -52,7 +52,7 @@ export default function Header() {
               </li>
             ))}
             <li className="nav-item">
-              <Link to="/login" className="nav-link active" aria-current="page" href="#">
+              <Link to="Login" className="nav-link active" aria-current="page" href="#">
                 <button type="button" className="btn btn-primary">
                 LOGIN
                 </button>

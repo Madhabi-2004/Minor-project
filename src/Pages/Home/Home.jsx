@@ -5,6 +5,8 @@ import BannerComponent from '../../Components/BannerComponent/BannerComponent'
 import Brand from '../../Components/Brand/Brand';
 import Card from '../../Components/Card/Card';
 import Img from '../../asset/background.jpg'
+import Sea from '../../asset/ANDAMAN-NICOBAR-ISLANDS.jpg'
+import Mount from '../../asset/Darjeeling-toy-train-route.webp'
 export default function Home() {
   const slides = [
     {
@@ -13,12 +15,12 @@ export default function Home() {
       description: 'Slide 1 Description',
     },
     {
-      image: Img,
+      image: Sea,
       title: 'Slide 2 Title',
       description: 'Slide 2 Description',
     },
     {
-      image: Img,
+      image: Mount,
       title: 'Slide 3 Title',
       description: 'Slide 3 Description',
     },

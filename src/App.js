@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";
 import Contact from "./Pages/Contact/Contact";
-import Login from "./Pages/auth/Login/Login";
+// import Login from "./Pages/Authentication/Login";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
           <Route  path="/"  element={<Home />} />
           <Route  path="/about"  element={<About/>} />
           <Route  path="/contact"  element={<Contact/>} />
-          <Route  path="/login"  element={<Login/>} />
+          {/* <Route  path="/login"  element={<Login/>} /> */}
         </Routes>
         <Footer/>
       </Router>

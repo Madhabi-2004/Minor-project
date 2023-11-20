@@ -1,53 +1,56 @@
 import React from 'react';
-// import './style.css'; // Import your custom CSS file
-import './About.css'; // Import your Bootstrap CSS file
-import picture from '../../asset/download.png'
+import Picture1 from '../../asset/Hotel.jpg'
+import Picture2 from '../../asset/plane.jpg'
+import Picture3 from '../../asset/cost.jpg'
+import Picture4 from '../../asset/hospitality.jpg'
+import './About.css';
 
 function AboutUs() {
-    return (
-        <div>
-            <section className="about-sec">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-12 col-lg-6 mb-4 mb-lg-0">
-                            <div className="img-head">
-                                <img src={picture} alt="about.img" />
-                            </div>
-                        </div>
-                        <div className="col-12 col-lg-6">
-                            <h2 className="text-head">KNOW MORE ABOUT US</h2>
-                            <div className="break-small mb-2"></div>
-                            <p className="text-para">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-                                ex soluta architecto nihil eos dolorum! Minima perferendis dolo
-                                mque pariatur deleniti architecto quas officia, dignissimos, facere
-                                nam, doloribus quod aliquam! Omnis sunt fuga perferendis, ut
-                                od recusandae totam voluptatum vitae et accusantium modi natus
-                                explicabo, quaerat sequi. Molestias aut perspiciatis nam!
-                            </p>
-                            <div className="row">
-                                <div className="col-12 col-md-4 mb-2 mb-md-0">
-                                    <div className="box">
-                                        <i className="fa fa-users mb-3"></i>
-                                        <h4 className="mb-0">TOTAL<br /> CLIENTS</h4>
-                                        <p className="mb-0">999</p>
-                                    </div>
-                                </div>
-
-                                <div className="col-12 col-md-4 mb-2 mb-md-0">
-                                    <div className="box">
-                                        <i className="fa fa-wrench mb-3"></i>
-                                        <h4 className="mb-0">PROJECTS<br />DONE</h4>
-                                        <p className="mb-0">900</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+    return(
+        <>
+        <section className='aboutSec'>
+            <h2>About Us</h2>
+            <div className="parts">
+                <div className="innerPart">
+                    <span><img src={Picture1} alt="" /></span>
+                    <div className="para">
+                        <h5>Best Hotels</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quis vero corrupti ducimus sunt, repudiandae atque neque eos consequatur ex!
+                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint odio dolorem molestias dicta, maxime esse vitae quas repellat ea perspiciatis.</p>
                     </div>
                 </div>
-            </section>
-        </div>
-    );
+
+                <div className="innerPart">
+                    <span><img src={Picture2} alt="" /></span>
+                    <div className="para">
+                        <h5>Reliable Journey</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quis vero corrupti ducimus sunt, repudiandae atque neque eos consequatur ex!
+                        </p>
+                    </div>
+                </div>
+
+                <div className="innerPart">
+                    <span><img src={Picture3} alt="" /></span>
+                    <div className="para">
+                        <h5>Low Costing</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quis vero corrupti ducimus sunt, repudiandae atque neque eos consequatur ex!
+                        </p>
+                    </div>
+                </div>
+
+                <div className="innerPart">
+                    <span><img src={Picture4} alt="" /></span>
+                    <div className="para">
+                        <h5>Best Hospitality</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quis vero corrupti ducimus sunt, repudiandae atque neque eos consequatur ex!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </>
+    )
 }
+
 
 export default AboutUs;
