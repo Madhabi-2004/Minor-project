@@ -13,7 +13,7 @@ function AboutUs() {
             <div className="parts">
                 <div className="innerPart">
                     <span><img src={Picture1} alt="" /></span>
-                    <div className="para about1" >
+                    <div className="para">
                         <h5>Best Hotels</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quis vero corrupti ducimus sunt, repudiandae atque neque eos consequatur ex!
                          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint odio dolorem molestias dicta, maxime esse vitae quas repellat ea perspiciatis.</p>
