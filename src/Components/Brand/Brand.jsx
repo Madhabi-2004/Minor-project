@@ -10,30 +10,30 @@ export default function Brand() {
     return (
         <div>
             <section className="brand-sec">
-            <p className="h3 text-center mb-5">Travel By Brand</p>
-                <div className="container my-5">
-                    <div className="row bg-white">
-                        <div className="col-md-2 border border-1 py-4 text-center">
+            <p className="h3 text-center text-center1 mb-5">Travel By Brand</p>
+                <div className="container my-51">
+                    <div className="row">
+                        <div className="col-md-2  border-1 py-4 text-center">
                             <figure><img className="img-fluid" src={Image1} alt="" /></figure>
                         </div>
 
-                        <div className="col-md-2 border border-1 py-4 text-center">
+                        <div className="col-md-2  border-1 py-4 text-center">
                             <figure><img className="img-fluid" src={Image2} alt="" /></figure>
                         </div>
 
-                        <div className="col-md-2 border border-1 py-4 text-center">
+                        <div className="col-md-2  border-1 py-4 text-center">
                             <figure><img className="img-fluid" src={Image3} alt="" /></figure>
                         </div>
 
-                        <div className="col-md-2 border border-1 py-4 text-center">
+                        <div className="col-md-2  border-1 py-4 text-center">
                             <figure><img className="img-fluid" src={Image4} alt="" /></figure>
                         </div>
 
-                        <div className="col-md-2 border border-1 py-4 text-center">
+                        <div className="col-md-2  border-1 py-4 text-center">
                             <figure><img className="img-fluid" src={Image5} alt="" /></figure>
                         </div>
 
-                        <div className="col-md-2 border border-1 py-4 text-center">
+                        <div className="col-md-2  border-1 py-4 text-center">
                             <figure><img className="img-fluid" src={Image6} alt="" /></figure>
                         </div>
                     </div>

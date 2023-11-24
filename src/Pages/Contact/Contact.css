@@ -17,4 +17,19 @@
   .head{
     text-align: center;
   }
-  
+  .contact{
+    max-width: 500px;
+    border: 3px solid #0db8cf;
+    margin:10px 0 auto;
+    background-image: url(../../asset/contact2.jpg);
+    font-size: medium;
+    font-weight: 800;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  .content-2{
+    margin-top: 20rem;
+    font-size: 50px;
+    font-weight: bolder;
+  }

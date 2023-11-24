@@ -7,6 +7,7 @@ import Card from '../../Components/Card/Card';
 import Img from '../../asset/background.jpg'
 import Sea from '../../asset/ANDAMAN-NICOBAR-ISLANDS.jpg'
 import Mount from '../../asset/Darjeeling-toy-train-route.webp'
+import Card2 from '../../Components/Card/Card2';
 export default function Home() {
   const slides = [
     {
@@ -25,11 +26,12 @@ export default function Home() {
       description: 'Slide 3 Description',
     },
     // Add more slides as needed
-  ];  return (
+  ]; 
+  return (
     <div>
-    <BannerComponent slides={slides}/>
-    <Brand/>
-    <Card/>
+      <BannerComponent slides={slides} />
+      <Brand />
+      <Card2/>
     </div>
   );
 }

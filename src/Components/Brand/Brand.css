@@ -1,3 +1,18 @@
-.mb-5{
+/* .mb-5{
     margin-top: 3rem!important;
+} */
+.brand-sec{
+    background-image: url(../../asset/images.jpeg);
+      /* height: 500px; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+.my-51{
+    margin-top: 3rem!important;
+}
+.text-center1{
+    padding-top: 50px;
 }
